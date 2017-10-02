@@ -50,7 +50,8 @@ public class BTester {
         CompilerContext context = new CompilerContext();
         options = CompilerOptions.getInstance(context);
 //        options.put(SOURCE_ROOT, System.getProperty("user.dir"));
-        options.put(SOURCE_ROOT, System.getProperty("user.dir") + "/bal-src");
+//        options.put(SOURCE_ROOT, System.getProperty("user.dir") + "/bal-src");
+        options.put(SOURCE_ROOT, "/home/eranda/wso2-source/ballerina-work/ballerina/bal-src");
         options.put(COMPILER_PHASE, "codeGen");
         options.put(PRESERVE_WHITESPACE, "false");
 
@@ -64,7 +65,7 @@ public class BTester {
 
         Compiler compiler = Compiler.getInstance(context);
 //        compiler.compile("bar.bal");
-        compiler.compile("pkg.bal");
+        compiler.compile("simple2.bal");
 //        compiler.compile("a.b.c");
 
 
